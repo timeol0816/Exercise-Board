@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <typeAliases>
+  	<typeAlias type="org.spring.project.board.service.impl.SearchCriteria" alias="SearchCriteria"/>
+  	<typeAlias type="org.spring.project.member.service.impl.MemberVO" alias="Member"/>
+  	<typeAlias type="org.spring.project.board.service.impl.BoardVO" alias="Board"/>
+  	<typeAlias type="org.spring.project.board.service.impl.ReplyVO" alias="Reply"/>
+  </typeAliases>
+   
+   
+  <mappers>
+  	<mapper resource="mybatis/mappers/MemberMapper.xml"/>
+    <mapper resource="mybatis/mappers/BoardMapper.xml"/>
+    <mapper resource="mybatis/mappers/replyMapper.xml"/>
+    
+  </mappers>
+</configuration>

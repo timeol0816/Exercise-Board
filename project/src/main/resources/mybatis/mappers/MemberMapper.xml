@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Member">
+	<!-- 게시판 글 작성 -->
+	<insert id="register" parameterType="Member">
+		insert into member(userid,userpass,username) values(#{userId},#{userPass},#{userName})
+	</insert>
+    
+    <select id="login" resultType="Member">
+    	select userid, userpass, username,regdate from member where userid = #{userId} and userpass=#{userPass}
+    </select>
+    
+    <update id="memberUpdate" parameterType="Member">
+    	update member set userpass=#{userPass},username=#{userName} where userid=#{userId}
+    </update>
+   
+   	<delete id="memberDelete" parameterType="Member">
+   		delete from member where userid=#{userId} and userpass=#{userPass}
+   	</delete>
+   	
+   	<select id="passChk" resultType="int">
+   		select count(*) from member where userid=#{userId} and userpass=#{userPass}
+   	</select>
+   	
+   	<select id="idChk" resultType="int">
+   		select count(*) from member where userid=#{userId}   	
+   	</select>
+</mapper>
