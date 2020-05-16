@@ -8,6 +8,7 @@
 UML 
 
 게시판 구조
+
 <img src="https://postfiles.pstatic.net/MjAyMDA1MTdfMjkg/MDAxNTg5NjU0MjQ3ODgx.H4P9O5pqN9pC_AQumWpagZsmgaBEG0IlnZNeyVD2M3wg.iqt3ltjrMbSpx9po3t6Zv3SxFrZe0U7F3t3_BKrPBWQg.PNG.timeol/3.PNG?type=w773">
 
 
